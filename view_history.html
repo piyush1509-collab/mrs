@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Consumption History</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+    <h2 class="text-center text-3xl font-bold my-6">Consumption History</h2>
+    
+    <div class="p-6">
+        <button onclick="fetchConsumptionHistory()" class="bg-green-500 px-4 py-2 rounded-lg hover:bg-green-600">Load History</button>
+        <table class="min-w-full bg-gray-800 rounded-lg mt-4">
+            <thead>
+                <tr class="text-left border-b border-gray-700">
+                    <th class="p-3">Date</th>
+                    <th class="p-3">Item Name</th>
+                    <th class="p-3">Item Code</th>
+                    <th class="p-3">Quantity</th>
+                    <th class="p-3">Consumed Area</th>
+                </tr>
+            </thead>
+            <tbody id="consumptionHistory" class="text-gray-300"></tbody>
+        </table>
+    </div>
+    
+    <a href="mrs.html" class="block text-center mt-6 text-indigo-400 hover:underline">Back to Home</a>
+</body>
+</html>
