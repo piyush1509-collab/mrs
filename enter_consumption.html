@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Consumption</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+    <h2 class="text-center text-3xl font-bold my-6">Enter Consumption</h2>
+    
+    <div class="p-6">
+        <label for="searchBox" class="block text-sm font-medium mb-2">Item Name</label>
+        <input type="text" id="searchBox" list="itemSuggestions" class="bg-gray-800 text-white p-2 rounded w-full mb-4" oninput="autoFillItemCode()">
+        <datalist id="itemSuggestions"></datalist>
+
+        <label for="itemCode" class="block text-sm font-medium mb-2">Item Code</label>
+        <input type="text" id="itemCode" class="bg-gray-800 text-white p-2 rounded w-full mb-4" readonly>
+        
+        <button onclick="logConsumption()" class="bg-indigo-500 px-4 py-2 rounded-lg hover:bg-indigo-600">Log Consumption</button>
+    </div>
+    
+    <a href="mrs.html" class="block text-center mt-6 text-indigo-400 hover:underline">Back to Home</a>
+</body>
+</html>
